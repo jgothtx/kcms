@@ -38,6 +38,10 @@ This project is set up for iterative development with [Claude Code](https://clau
 
 - **`TODO.md`** — Phased build plan with checkbox progress tracking. Claude uses this to understand what's been done and what to work on next. Mark items `[x]` as you complete them.
 
+### First Time Setup
+
+Just run `claude` from the project root. Do **not** run `claude init` — `CLAUDE.md` is already checked in and will be picked up automatically. Running `init` would overwrite it.
+
 ### Claude Memory
 
 Claude Code maintains per-user memory under `~/.claude/projects/`. This is **not** checked into the repo — each collaborator builds their own memory over time as they interact with Claude. No setup is needed; Claude will create memory files automatically as it learns your preferences and project context.
