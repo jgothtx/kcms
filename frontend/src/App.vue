@@ -20,15 +20,20 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
+  background: #fff;
   border-bottom: 1px solid #ddd;
 }
 
 header h2 {
   margin: 0;
+  white-space: nowrap;
 }
 
 nav {
@@ -39,7 +44,7 @@ nav {
 nav a {
   text-decoration: none;
   color: #666;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 4px;
 }
 
@@ -49,6 +54,8 @@ nav a.router-link-exact-active {
 }
 
 main {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 2rem;
 }
 </style>
